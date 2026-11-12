@@ -52,7 +52,7 @@ def _save_api(api1: str, api2: str):
         pass
 
 _saved_api1, _saved_api2 = _load_api()
-_default_api = "https://ankitshakyaxapi.vercel.app/download?mpd_url"
+_default_api = "https://anonymouspwplayeerr-f2fc1874fd80.herokuapp.com/pw"
 PWAPI1 = _saved_api1 or os.environ.get("PWAPI1", _default_api)
 PWAPI2 = _saved_api2 or os.environ.get("PWAPI2", _default_api)
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1171,16 +1171,11 @@ async def txt_handler(bot: Client, m: Message):
             elif 'videos.classplusapp' in url or "tencdn.classplusapp" in url or "webvideos.classplusapp.com" in url or "media-cdn-alisg.classplusapp.com" in url or "videos.classplusapp" in url or "videos.classplusapp.com" in url or "media-cdn-a.classplusapp" in url or "media-cdn.classplusapp" in url:
              url = requests.get(f'https://api.classplusapp.com/cams/uploader/video/jw-signed-url?url={url}', headers={'x-access-token': 'eyJjb3Vyc2VJZCI6IjQ1NjY4NyIsInR1dG9ySWQiOm51bGwsIm9yZ0lkIjo0ODA2MTksImNhdGVnb3J5SWQiOm51bGx9r'}).json()['url']
 
-            
-            #elif '/master.mpd' in url:
-             #id =  url.split("/")[-2]
-             #url = f"https://player.muftukmall.site/?id={id}"
-            #elif '/master.mpd' in url:
-             #id =  url.split("/")[-2]
-             #url = f"https://anonymouspwplayerrr-31d6706c7a3b.herokuapp.com/pw?url={url}?token={raw_text4}"
-            #url = f"https://madxapi-d0cbf6ac738c.herokuapp.com/{id}/master.m3u8?token={raw_text4}"
-            elif"d1d34p8vz63oiq" in url or "master.mpd" in url or "parentId" in url:
-             url = f"{PWAPI1}={url}&token={raw_text4}"
+            #i love you 🙈🫣😘🫂🫂
+            elif '/master.mpd' in url or '/master.m3u8' in url :
+             url = f"https://ankitshakyaxapi.vercel.app/download?mpd_url={url}"
+            elif "parentId" in url or "childId" in url :
+             url = f"{PWAPI1}?url={url}&token={raw_text4}"
                      
                                                          
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
