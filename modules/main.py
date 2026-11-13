@@ -1172,7 +1172,7 @@ async def txt_handler(bot: Client, m: Message):
              url = requests.get(f'https://api.classplusapp.com/cams/uploader/video/jw-signed-url?url={url}', headers={'x-access-token': 'eyJjb3Vyc2VJZCI6IjQ1NjY4NyIsInR1dG9ySWQiOm51bGwsIm9yZ0lkIjo0ODA2MTksImNhdGVnb3J5SWQiOm51bGx9r'}).json()['url']
 
             #i love you 🙈🫣😘🫂🫂
-            elif '/master.mpd' in url or '/master.m3u8' in url :
+            elif "d1d34p8vz63oiq" in url or '/master.m3u8' in url or '/dash/audio/x.mp4' in url or '/dash/xxx/x.mp4' in url :
              url = f"https://ankitshakyaxapi.vercel.app/download?mpd_url={url}"
             elif "parentId" in url or "childId" in url :
              url = f"{PWAPI1}?url={url}&token={raw_text4}"
